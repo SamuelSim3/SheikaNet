@@ -5,26 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- 1ER MANERA DE ESTILAR INCORRECTAMENTE
-        <style>
-            h1{
-                color: brown;
-            }
-        </style> -->
+            -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="stylesheet" href="style.css">
 
-        <title>Inicio</title>
+        <title>Juegos</title>
     </head>
 
     <body> <!--Cuerpo de la pagina-->
         <header id="header">
             <nav id="nav">
                 <img class="img_logo" src="Icons/Triforce1.webp" alt="Ícono Logo principal">
-                <img class="img_Banner1" src="Images/Baner1.png" alt="Banner Bienvenidos">
+                <img class="img_Banner1" src="Images/ContaxctoBaner.png" alt="Banner Juegos">
                 <ul class="navBar_ul">
-                    <li><a href="#">_Inicio</a></li>
+                    <li><a href="index.html">_Inicio</a></li>
                     <li><a href="1Juegos.html">_Juegos</a></li>
                     <li><a href="2Fondos.html">_Fondos</a></li>
                     <li><a href="3Personajes.html">_Personajes</a></li>
@@ -35,14 +31,35 @@
 
         <!--ESTRUCTURA #2 = CONTENIDO-->
         <main id="main">
-            <h1>Sheikanet</h1>
-            <img class="img_inicio" src="Images/Hyrule1.jpg" alt="Imagen principal">
+            <!--<img class="img_Escribenos" src="Images/Escribenos.png" alt="Escribenos">-->
+            <img class="img_Contacto" src="Images/Contacto_T.jpg" alt="Imagen Contacto">
+            <form method="POST">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="mensaje">Mensaje a la comunidad Hyliana:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <laber for="Tribu">Tribu con la que te identificas:</laber>
+                <select name="Tribu" id= "Tribu con la que te identificas">
+                    <option value="Hylianos">Hylianos</option>
+                    <option value="Goron">Goron</option>
+                    <option value="Zora">Zora</option>
+                    <option value="Rito">Rito</option>
+                    <option value="Gerudo">Gerudo</option>
+                </select>
+            
+                <input type="submit" value="Enviar mensaje">
+            </form>
+            
+            
         </main>
 
         <!--ESTRUCTURA #3 = PIÉ DE PÁGINA-->
         <footer id="footer">
-            <nav id="nav_footer">
-            </nav>
             <section class="footer_logo">
                 <img src="Icons/TriforceGold.webp" alt="Ícono Logo pié">
             </section>
